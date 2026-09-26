@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD Data Mahasiswa</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div>
+        <h1>CRUD Data Mahasiswa</h1>
+        <p>PHP + MySQL + JavaScript</p>
+      </div>
+      <button id="btnTambah" class="btn btn-primary">+ Tambah Data</button>
+    </header>
+
+    <main class="card">
+      <div id="alert"></div>
+      <div class="toolbar">
+        <input id="searchInput" type="search" placeholder="Cari nama, NBI, atau jurusan...">
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>NBI</th>
+              <th>Nama</th>
+              <th>Jurusan</th>
+              <th>Email</th>
+              <th>No. HP</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody id="dataTable">
+            <tr><td colspan="7" class="loading">Memuat data...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modalTitle">Tambah Mahasiswa</h2>
+        <button id="btnClose" class="close">&times;</button>
+      </div>
+      <form id="mahasiswaForm">
+        <input type="hidden" id="id">
+        <label>NBI
+          <input id="nbi" required maxlength="30">
+        </label>
+        <label>Nama Lengkap
+          <input id="nama" required maxlength="100">
+        </label>
+        <label>Jurusan
+          <input id="jurusan" required maxlength="100">
+        </label>
+        <label>Email
+          <input id="email" type="email" required maxlength="100">
+        </label>
+        <label>No. HP
+          <input id="no_hp" maxlength="20">
+        </label>
+        <div class="form-actions">
+          <button type="button" id="btnCancel" class="btn btn-secondary">Batal</button>
+          <button type="submit" class="btn btn-primary">Simpan</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
