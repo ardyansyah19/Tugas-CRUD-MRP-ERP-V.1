@@ -1,4 +1,4 @@
-# CRUD Data Mahasiswa - PHP + MySQL
+# Tugas CRUD ERP MRP
 By Ahmad Riko Dyansyah
 
 Aplikasi CRUD (Create, Read, Update, Delete) sederhana untuk data mahasiswa menggunakan:
