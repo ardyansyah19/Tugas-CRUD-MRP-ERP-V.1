@@ -1,4 +1,5 @@
 # CRUD Data Mahasiswa - PHP + MySQL
+By Ahmad Riko Dyansyah
 
 Aplikasi CRUD (Create, Read, Update, Delete) sederhana untuk data mahasiswa menggunakan:
 
