@@ -200,16 +200,3 @@ $dsn = "mysql:host=$host;port=3307;dbname=$db;charset=$charset";
 ```
 
 Sesuaikan `3307` dengan port MySQL Anda.
-
-## 10. Catatan Keamanan
-
-Project ini dibuat sebagai template pembelajaran. Untuk deployment production, tambahkan:
-
-- Authentication dan authorization
-- CSRF protection
-- Rate limiting
-- Server-side validation yang lebih ketat
-- Environment variables untuk kredensial database
-- Logging dan monitoring
-- HTTPS
-- Pengaturan CORS yang lebih ketat
