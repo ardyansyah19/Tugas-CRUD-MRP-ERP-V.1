@@ -213,7 +213,3 @@ Project ini dibuat sebagai template pembelajaran. Untuk deployment production, t
 - Logging dan monitoring
 - HTTPS
 - Pengaturan CORS yang lebih ketat
-
-## Lisensi
-
-Bebas digunakan dan dimodifikasi untuk pembelajaran dan pengembangan project.
