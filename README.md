@@ -181,22 +181,3 @@ Content-Type: application/json
 ```http
 DELETE /api/mahasiswa.php?id=1
 ```
-
-## 9. Jika Muncul Error Koneksi Database
-
-Periksa hal berikut:
-
-1. MySQL/MariaDB sudah berjalan.
-2. Nama database adalah `crud_mahasiswa`.
-3. Username dan password di `config/database.php` benar.
-4. Port MySQL sesuai konfigurasi komputer Anda.
-5. Folder project berada di `htdocs` XAMPP atau `www` Laragon.
-6. PHP yang digunakan mendukung PDO MySQL.
-
-Jika MySQL menggunakan port selain 3306, DSN dapat diubah menjadi:
-
-```php
-$dsn = "mysql:host=$host;port=3307;dbname=$db;charset=$charset";
-```
-
-Sesuaikan `3307` dengan port MySQL Anda.
