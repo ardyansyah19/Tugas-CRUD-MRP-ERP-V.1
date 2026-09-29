@@ -175,9 +175,3 @@ Body:
 PUT /api/mahasiswa.php?id=1
 Content-Type: application/json
 ```
-
-### DELETE - Menghapus data
-
-```http
-DELETE /api/mahasiswa.php?id=1
-```
