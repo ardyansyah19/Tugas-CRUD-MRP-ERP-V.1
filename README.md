@@ -121,31 +121,6 @@ Setelah Apache dan MySQL aktif, buka:
 http://localhost/crud_php_mysql/
 ```
 
-## 7. Fitur
-
-Aplikasi menyediakan:
-
-- Menampilkan seluruh data mahasiswa
-- Menambah data
-- Mengedit data
-- Menghapus data
-- Pencarian data
-- Validasi field wajib
-- Validasi email HTML
-- Prepared Statement PDO
-- REST-style endpoint menggunakan GET, POST, PUT, DELETE
-- Tampilan responsive
-
-## 8. API Endpoint
-
-Base URL:
-
-```text
-/api/mahasiswa.php
-```
-
-### GET - Menampilkan data
-
 ```http
 GET /api/mahasiswa.php
 ```
