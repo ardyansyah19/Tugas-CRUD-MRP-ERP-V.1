@@ -149,29 +149,3 @@ Base URL:
 ```http
 GET /api/mahasiswa.php
 ```
-
-### POST - Menambah data
-
-```http
-POST /api/mahasiswa.php
-Content-Type: application/json
-```
-
-Body:
-
-```json
-{
-  "nbi": "1462400003",
-  "nama": "Nama Mahasiswa",
-  "jurusan": "Teknik Informatika",
-  "email": "nama@example.com",
-  "no_hp": "081234567890"
-}
-```
-
-### PUT - Mengubah data
-
-```http
-PUT /api/mahasiswa.php?id=1
-Content-Type: application/json
-```
