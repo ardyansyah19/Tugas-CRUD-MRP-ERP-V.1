@@ -78,21 +78,3 @@ try {
 
         response(true, "Data berhasil diperbarui.");
     }
-
-    if ($method === "DELETE") {
-        $stmt = $pdo->prepare("DELETE FROM mahasiswa WHERE id=:id");
-        $stmt->execute([":id" => $id]);
-
-        if ($stmt->rowCount() === 0) {
-            response(false, "Data tidak ditemukan.", [], 404);
-        }
-        response(true, "Data berhasil dihapus.");
-    }
-
-    response(false, "Method tidak didukung.", [], 405);
-} catch (PDOException $e) {
-    if ($e->getCode() === "23000") {
-        response(false, "NBI atau email sudah digunakan.", [], 409);
-    }
-    response(false, "Terjadi kesalahan database.", [], 500);
-}
