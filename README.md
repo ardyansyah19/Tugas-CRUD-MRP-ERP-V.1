@@ -92,35 +92,3 @@ Import:
 ```text
 database/crud_mahasiswa.sql
 ```
-
-### Cara 2 - CMD
-
-Masuk ke folder MySQL XAMPP, misalnya:
-
-```bat
-cd C:\xampp\mysql\bin
-```
-
-Kemudian:
-
-```bat
-mysql -u root -p < C:\xampp\htdocs\crud_php_mysql\database\crud_mahasiswa.sql
-```
-
-Jika root tidak menggunakan password:
-
-```bat
-mysql -u root < C:\xampp\htdocs\crud_php_mysql\database\crud_mahasiswa.sql
-```
-
-## 6. Menjalankan Aplikasi
-
-Setelah Apache dan MySQL aktif, buka:
-
-```text
-http://localhost/crud_php_mysql/
-```
-
-```http
-GET /api/mahasiswa.php
-```
