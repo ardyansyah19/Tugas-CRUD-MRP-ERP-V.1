@@ -57,38 +57,3 @@ C:\laragon\www\
 atau sesuai lokasi folder `www` Laragon Anda.
 
 Kemudian jalankan Apache/Nginx dan MySQL dari Laragon.
-
-## 4. Konfigurasi Database
-
-Buka:
-
-```text
-config/database.php
-```
-
-Konfigurasi default:
-
-```php
-$host = "localhost";
-$db   = "crud_mahasiswa";
-$user = "root";
-$pass = "";
-```
-
-Jika MySQL Anda menggunakan password, ubah `$pass`.
-
-Contoh:
-
-```php
-$pass = "password_mysql_anda";
-```
-
-## 5. Membuat Database
-
-### Cara 1 - phpMyAdmin
-
-Import:
-
-```text
-database/crud_mahasiswa.sql
-```
