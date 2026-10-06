@@ -27,33 +27,3 @@ crud_php_mysql/
 ├── index.html
 └── README.md
 ```
-
-## 2. Instalasi XAMPP
-
-1. Install XAMPP.
-2. Jalankan **Apache** dan **MySQL**.
-3. Salin folder `crud_php_mysql` ke:
-
-```text
-C:\xampp\htdocs\
-```
-
-4. Import file:
-
-```text
-database/crud_mahasiswa.sql
-```
-
-Bisa melalui phpMyAdmin atau CMD MySQL.
-
-## 3. Instalasi Laragon
-
-Jika menggunakan Laragon, salin folder ke:
-
-```text
-C:\laragon\www\
-```
-
-atau sesuai lokasi folder `www` Laragon Anda.
-
-Kemudian jalankan Apache/Nginx dan MySQL dari Laragon.
