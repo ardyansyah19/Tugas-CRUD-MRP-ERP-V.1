@@ -24,3 +24,23 @@ try {
     ]);
     exit;
 }
+
+} catch (PDOException $e) {
+    http_response_code(500);
+    header("Content-Type: application/json; charset=UTF-8");
+    echo json_encode([
+        "success" => false,
+        "message" => "Koneksi database gagal: " . $e->getMessage()
+    ]);
+    exit;
+}
+
+} catch (PDOException $e) {
+    http_response_code(500);
+    header("Content-Type: application/json; charset=UTF-8");
+    echo json_encode([
+        "success" => false,
+        "message" => "Koneksi database gagal: " . $e->getMessage()
+    ]);
+    exit;
+}
